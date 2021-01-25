@@ -14,7 +14,7 @@ export default function Book (props) {
         {expanded ? 'Hide more info' : 'Show more info'}
       </button>
       {expanded && (
-        <div>
+        <div style={{ marginTop: '1rem' }}>
           <div>URL: <a href={book.url}>{book.url}</a></div>
           {book.publicationDate && <div>Publication date: {book.publicationDate}</div>}
           {book.publisher && <div>Publisher: {book.publisher}</div>}
